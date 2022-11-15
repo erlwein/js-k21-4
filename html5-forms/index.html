@@ -19,7 +19,7 @@
     </style>
 </head>
 <body>
-    <form action="results.html" method="GET">
+    <form action="results.html" method="GET" enctype="multipart/form-data">
         <div>
             <label for="username">Username</label>
             <input name="username" id="username" value="Username">
@@ -82,6 +82,29 @@
             <label for="female">Female</label>
             <input type="radio" name="gender" id="Female" value="female">
         </div>
+
+        <div>
+            <label for="eyeColor">Eye Color</label>
+            <select name="eyeColor" id="eyerColor">
+                <option value="green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="brown">Brown</option>
+                <option label="Red" value="red"></option>
+
+            </select>
+        </div>
+
+        <div>
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio" rows="10" cols="20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sitipsum tenetur nostrum porro culpa veiam quam eveniet tempore consequatur inventore?</textarea>
+        </div>
+
+        <input type="hidden" name="hidden" value="101">
+        <div>
+            <label for="file">File</label>
+            <input type="file" id="file" name="file">
+        </div> 
+
         <div>
             <button type="reset" style="background-color: orange;">Reset</button>
             <button type="submit" style="background-color: aqua;">Submit</button>

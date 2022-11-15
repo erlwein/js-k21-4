@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autokauf</title>
+    <style>
+        div{
+            margin-top: 15px;
+            margin-left: 100px;
+            margin-bottom: 30px;
+        }
+        .reset{
+            border: 3px #0a0 solid;
+            border-radius: 15px ;
+            background-color: aqua;
+            height: 40px;
+            width: 150px;
+        }
+
+        form{
+           
+            
+            border: 1px solid #000;
+            border-radius: 15px;
+            background-color: #a9adb8 ;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form action="results.html" name="auto" action="#" method="get" enctype="multipart/form-data">
+
+        <div>
+        
+            <img src="Bider/car.png" width="300" height="300" >
+    
+        </div>
+      
+    
+    
+        <div>
+            <label for="marke">Marke</label>
+            <select name="marke" id="marke">
+                <option selected value="" hidden disabled></option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="VW">VW</option>
+                <option label="Ford">Ford</option>
+    
+            </select>
+    
+        </div>
+    
+        <div>
+            <label for="modell">Modell</label>
+            <select name="modell" id="modell">
+                <option selected value="" hidden disabled></option>
+                <option value="X1">BMW</option>
+                <option value="Klasse A">Klasse A</option>
+                <option value="Golf">Golf</option>
+                <option label="EcoSport">EcoSport</option>
+    
+            </select>
+    
+        </div>
+        
+
+        <div>
+            <label for="farbe">Farbe</label>
+            <select name="farbe" id="farbe">
+                <option selected value="" hidden disabled></option>
+                <option value="Rot">Rot</option>
+                <option value="Blau">Blau A</option>
+                <option value="Gelb">Gelb</option>
+                <option label="Grau">Grau</option>
+    
+            </select>
+    
+        </div>
+        <div>
+            <label for="kraftstoff">Kraftstoff</label>
+            <select name="kraftstoff" id="kraftstoff">
+                <option selected value="" hidden disabled></option>
+                <option value="Benzin">Benzin</option>
+                <option value="Elektro">Elektro</option>
+                <option value="Diesel">Diesel</option>
+             
+    
+            </select>
+    
+        </div>
+        <div>
+            <label for="farbe">wählen Sie eine Farbe</label>
+            <input type="color" name="color" >
+        </div>
+
+        <div>
+            <label for="date">Erstzulassung</label>
+            <input type="date" 
+            name="date" 
+            id="date"
+            max="2022-11-15">
+        </div>
+
+        
+        <div>
+            <button name="reset" type="reset" style="background-color: orange;            border: 3px #0a0 solid;
+            border-radius: 15px ;
+            background-color: aqua;
+            height: 40px;
+            width: 150px;">Reset</button>
+            <button type="submit" style="background-color: aqua; border: 3px #0a0 solid;
+            border-radius: 15px ;
+            background-color: aqua;
+            height: 40px;
+            width: 150px; " >Submit</button>
+
+        </div>
+
+    </form>
+
+
+
+</body>
+</html>
