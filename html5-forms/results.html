@@ -15,9 +15,9 @@
 
     const resultsList = document.getElementById('results')
 
-    new URLSearchParams(window.location.search).forEach((value, name) => {
+    new URLSearchParams(window.location.search).forEach((value, user) => {
 
-      resultsList.append(`${name}: ${value}`)
+      resultsList.append(`${user}: ${value}`)
 
       resultsList.append(document.createElement('br'))
 
