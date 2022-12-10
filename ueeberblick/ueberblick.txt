@@ -1,0 +1,50 @@
+Java vs JavaScript
+
+-Java ist C# sehr ähnlich, wird kompiliert, ist objektorietiert
+-JavaScript wird von Webbrowsern interpretiert, ist nicht obektorientert
+
+.exe: Executable File
+-Resultat der Kompilierung
+-Kompilierte
+-Programiercode wird in Maschinensprache übersetzt
+
+interpretierbare Sprachen
+-Programmcode wird nicht in Maschinensprache übersetzt, sondern direkt interpretiert
+-JavaScript, Python, Ruby, PHP, Perl, basch, ...
+
+PHP ist eine interpretierbare Sprachen
+-Php-Code wird von einem PHP-Interpreter ausgefühtz
+-Backend (Sever) wird von PHP interpretiert
+
+JavaScript:
+-JavaScript-Code wird von eine JavaScript-Interpreter ausgeführt
+-code wird clientseitig ausgeführt (Browser)
+
+APIs und Frameworks
+- API: Appication Programming Interface
+- Schnittstelle zwischen zwei Programmen
+
+Man stelle sich in C# geschriebenen TAchenrechner (Backend, Server) vor, 
+der dem Internet zur Verfügung gestellt werden soll. Wir möchten den Tachenrechner im 
+Webbrowser verwenden können.
+
+Dafür müssen wir das Benutzerinterface des Taschenrechners (Frontend, client) inJavaScript schreiben.
+
+HTTP-Requests
+-Die Aufgabe der HTTP-Requests ist es, Daten zwischen client und Server auszutauchen
+
+-Get-Requests: Daten werden vom Server angefragt
+-Post-Request: Daten werden an den Server gesendet
+-Put-Request: Daten werden and de Server gesendet und ersetzen bestehenden Daten
+-Delete-Request: Daten werden vom gelöscht
+
+HTTP-Statuscodes
+- 200: ok 
+- 301: Moved Permanetly
+- 404: Not found
+- 504: Gatway Timeout
+
+2xx: erfolgreich
+3xx  ? erfolgreich, aber de client muss eine Aktion ausführen
+4xx: fehlerhaft FEHLER BEIM client
+5xx: fehlerhaft FEHLER BEIM Server
