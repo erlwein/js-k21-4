@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('imagesp/foto1.jpg');
+   
+    
+    background-position: center center;
+    background-size: 2000px;
+    
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+
+}
+.container .card{
+    position:relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px gray;
+    border-radius: 15px;
+    background:transparent; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);;
+
+}
+
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+    transform: translate(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.container .card .content h2{
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(29, 28, 28, 0.005);
+    pointer-events: none;
+
+
+}
+
+.container .card .content h3{
+    font-size:1em;
+    color: #fff;
+    z-index: 1;
+}
+
+.container .card .content p{
+    font-size: 1 em;
+    color: #fff;
+    font-weight: 300;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.5rem 1rem;
+    background:rgb(100, 83, 86);
+    color:#fff;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 15px;
+}
+.btn:hover{
+    background-color: rgb(227, 18, 235);
+    letter-spacing: .2rem;
+}
+.carde{
+    position: fixed;
+    top: 1rem; right: 1rem;
+    
+    
+    color: #fff;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    
+
+}
